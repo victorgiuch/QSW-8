@@ -1,0 +1,41 @@
+#include <iostream>
+
+using namespace std;
+
+int theSum(int x, int y){
+int answer = x + y;
+return answer;
+}
+
+int theDif(int x, int y){
+int answer = x - y;
+return answer;
+}
+
+int thePro(int x, int y){
+int answer = x * y;
+return answer;
+}
+
+int main()
+{
+ int n1, n2;
+
+ cout << "Give a number: " << endl;
+ cin >> n1;
+
+ cout << "Give another number: " << endl;
+ cin >> n2;
+
+ int sum = theSum(n1,n2);
+ cout << "The sum of those numbers is: " << sum << endl;
+
+ int dif = theDif(n1,n2);
+ cout << "The difference of those numbers is: " << dif << endl;
+
+ int pro = thePro(n1,n2);
+ cout << "The product of those numbers is: " << pro << endl;
+
+
+    return 0;
+}
